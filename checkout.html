@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/checkout.css">
+</head>
+<body>
+
+  <section class="checkout-page-section">
+    <div class="checkout-page-wrapper">
+
+      <!-- ORDER SUMMARY -->
+      <div class="checkout-summary-section">
+        <h1>Order Summary</h1>
+
+        <div class="summary-box">
+          <div id="checkout-items"></div>
+
+          <div class="checkout-total-row">
+            <span>Total</span>
+            <span>$<span id="checkout-total">0.00</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUSTOMER INFO -->
+      <aside class="checkout-form-section">
+        <h2>Customer Information</h2>
+
+        <form id="checkout-form" class="checkout-form">
+          <div class="form-group">
+            <label for="customer-name">Full Name</label>
+            <input type="text" id="customer-name" placeholder="Enter your full name">
+            <small id="checkout-name-error" class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="customer-phone">Phone Number</label>
+            <input type="tel" id="customer-phone" placeholder="(555) 555-5555">
+            <small id="checkout-phone-error" class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="customer-email">Email Address</label>
+            <input type="email" id="customer-email" placeholder="you@example.com">
+            <small id="checkout-email-error" class="error-message"></small>
+          </div>
+
+          <button type="submit" class="checkout-submit-btn">Place Order</button>
+          <p id="order-message" class="success-message"></p>
+        </form>
+      </aside>
+
+    </div>
+  </section>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

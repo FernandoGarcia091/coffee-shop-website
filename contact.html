@@ -1,22 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
 
-    <link rel="stylesheet" href="styles.css">
-    
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/skewed-header.css">
+  <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
-   <h1>Contact</h1>
-   <a href="index.html">Home</a>
-   <a href="about.html">About</a>
-   <a href="menu.html">Menu</a>
-   <a href="contact.html">Contact</a>
 
+  <!-- HEADER -->
+  <div class="skewed-header">
+    <div class="header-bg" style="background-image: url('images/coffee-items/contact-image.jpg');"></div>
 
+    <div class="skewed-header-wrapper">
+      <div class="skewed-header-content">
+        <div class="heading-wrapper">
+          <h1>Contact</h1>
+        </div>
+
+        <div class="links-wrapper">
+          <div class="nav-link"><a href="index.html">Home</a></div>
+          <div class="nav-link"><a href="about.html">About</a></div>
+          <div class="nav-link"><a href="menu.html">Menu</a></div>
+          <div class="nav-link"><a href="contact.html">Contact</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <section class="contact-page-section">
+    <div class="contact-page-wrapper">
+
+      <!-- LEFT SIDE -->
+      <div class="contact-column">
+        <h2>Send Us a Message</h2>
+        <p class="section-intro">
+          Have a question, special request, or want to get in touch? Fill out the form below.
+        </p>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="contact-name">Full Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your full name">
+            <small class="error-message" id="name-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-phone">Phone Number</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="(555) 555-5555">
+            <small class="error-message" id="phone-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" placeholder="you@example.com">
+            <small class="error-message" id="email-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="6" placeholder="Write your message here..."></textarea>
+            <small class="error-message" id="message-error"></small>
+          </div>
+
+          <button type="submit" class="primary-btn">Send Message</button>
+          <p id="form-success-message" class="success-message"></p>
+        </form>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <aside class="cart-column">
+        <h2>Your Cart</h2>
+
+        <!-- QUICK ADD ITEMS -->
+        <div class="quick-add-section">
+          <h3>Quick Add</h3>
+
+          <div class="quick-add-item">
+            <div>
+              <strong>Espresso</strong>
+              <p>$3.50</p>
+            </div>
+            <button class="add-to-cart-btn" data-name="Espresso" data-price="3.50">Add</button>
+          </div>
+
+          <div class="quick-add-item">
+            <div>
+              <strong>Latte</strong>
+              <p>$4.75</p>
+            </div>
+            <button class="add-to-cart-btn" data-name="Latte" data-price="4.75">Add</button>
+          </div>
+
+          <div class="quick-add-item">
+            <div>
+              <strong>Iced Coffee</strong>
+              <p>$4.25</p>
+            </div>
+            <button class="add-to-cart-btn" data-name="Iced Coffee" data-price="4.25">Add</button>
+          </div>
+
+          <div class="quick-add-item">
+            <div>
+              <strong>Frappuccino</strong>
+              <p>$6.25</p>
+            </div>
+            <button class="add-to-cart-btn" data-name="Frappuccino" data-price="6.25">Add</button>
+          </div>
+
+          <div class="quick-add-item">
+            <div>
+              <strong>Affogato</strong>
+              <p>$6.50</p>
+            </div>
+            <button class="add-to-cart-btn" data-name="Affogato" data-price="6.50">Add</button>
+          </div>
+        </div>
+
+        <!-- CART ITEMS -->
+        <div class="cart-box">
+          <div id="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+          </div>
+
+          <div class="cart-summary">
+            <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+            <button id="clear-cart-btn" class="secondary-btn" type="button">Clear Cart</button>
+          </div>
+        </div>
+
+        <!-- CHECKOUT FORM -->
+        <div class="checkout-section">
+          <h3>Checkout Info</h3>
+
+          <form id="checkout-form" class="checkout-form">
+            <div class="form-group">
+              <label for="checkout-name">Name</label>
+              <input type="text" id="checkout-name" placeholder="Your name">
+              <small class="error-message" id="checkout-name-error"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-phone">Phone</label>
+              <input type="tel" id="checkout-phone" placeholder="(555) 555-5555">
+              <small class="error-message" id="checkout-phone-error"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-email">Email</label>
+              <input type="email" id="checkout-email" placeholder="you@example.com">
+              <small class="error-message" id="checkout-email-error"></small>
+            </div>
+
+            <button type="submit" class="primary-btn">Place Order</button>
+            <p id="checkout-success-message" class="success-message"></p>
+          </form>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="logo-footer">
+      <img src="images/logos/white-logo.png" alt="Logo">
+    </div>
+
+    <div class="footer-phone-hours">
+      <span class="phone">555 555 5555</span>
+      <span class="hours">10 AM - MIDNIGHT</span>
+    </div>
+
+    <div class="links-wrapper">
+      <div class="nav-link"><a href="index.html">Home</a></div>
+      <div class="nav-link"><a href="about.html">About</a></div>
+      <div class="nav-link"><a href="menu.html">Menu</a></div>
+      <div class="nav-link"><a href="contact.html">Contact</a></div>
+    </div>
+
+    <div class="social-media-icons-wrapper">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+    <div class="copyright-wrapper">
+      &copy; 2026 The Morning Grind &#124; All Rights Reserved
+    </div>
+  </div>
+
+  <script src="contact.js"></script>
 </body>
 </html>
