@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/skewed-header.css">
+    <link rel="stylesheet" href="styles/page-container.css">
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+
+<body>
+
+    <div class="skewed-header">
+        <div class="header-bg" style="background-image: url(images/backgrounds/menu-top-image.png);"></div>
+
+        <div class="skewed-header-wrapper">
+            <div class="skewed-header-content">
+                <div class="heading-wrapper">
+                    <h1>Menu</h1>
+                </div>
+
+                <div class="links-wrapper">
+                    <div class="nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="nav-link">
+                        <a href="about.html">About</a>
+                    </div>
+
+                    <div class="nav-link">
+                        <a href="menu.html">Menu</a>
+                    </div>
+
+                    <div class="nav-link">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU PAGE CONTENT -->
+    <div class="menu-page-section">
+        <div class="menu-page-wrapper">
+
+            <!-- LEFT SIDE -->
+            <div class="menu-items-section">
+                <h2 class="menu-main-title">Our Drinks</h2>
+
+                <!-- HOT DRINKS -->
+                <h3 class="menu-category">Hot Drinks</h3>
+                <div class="menu-grid">
+
+                    <div class="menu-card">
+                        <img src="images/coffee-items/espresso.png" alt="Espresso">
+                        <h4>Espresso</h4>
+                        <p>Fresh pulled espresso shot.</p>
+                        <div class="price-row">
+                            <span>$3.50</span>
+                            <button class="add-to-cart-btn" data-name="Espresso" data-price="3.50">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="images/coffee-items/latte.png" alt="Latte">
+                        <h4>Latte</h4>
+                        <p>Espresso with steamed milk.</p>
+                        <div class="price-row">
+                            <span>$4.75</span>
+                            <button class="add-to-cart-btn" data-name="Latte" data-price="4.75">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="images/coffee-items/cappuccino.png" alt="Cappuccino">
+                        <h4>Cappuccino</h4>
+                        <p>Rich espresso with foam.</p>
+                        <div class="price-row">
+                            <span>$4.50</span>
+                            <button class="add-to-cart-btn" data-name="Cappuccino" data-price="4.50">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ICED DRINKS -->
+                <h3 class="menu-category">Iced Drinks</h3>
+                <div class="menu-grid">
+
+                    <div class="menu-card">
+                        <img src="images/coffee-items/iced-coffee.png" alt="Iced Coffee">
+                        <h4>Iced Coffee</h4>
+                        <p>Smooth chilled coffee.</p>
+                        <div class="price-row">
+                            <span>$4.25</span>
+                            <button class="add-to-cart-btn" data-name="Iced Coffee" data-price="4.25">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="images/coffee-items/cold-brew.png" alt="Cold Brew">
+                        <h4>Cold Brew</h4>
+                        <p>Slow brewed for smooth flavor.</p>
+                        <div class="price-row">
+                            <span>$4.75</span>
+                            <button class="add-to-cart-btn" data-name="Cold Brew" data-price="4.75">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BLENDED DRINKS -->
+                <h3 class="menu-category">Blended Drinks</h3>
+                <div class="menu-grid">
+
+                    <div class="menu-card">
+                        <img src="images/coffee-items/frappe.jpg" alt="Frappe">
+                        <h4>Frappe</h4>
+                        <p>Sweet iced blended coffee.</p>
+                        <div class="price-row">
+                            <span>$5.75</span>
+                            <button class="add-to-cart-btn" data-name="Frappe" data-price="5.75">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="images/coffee-items/frappuccino.png" alt="Frappuccino">
+                        <h4>Frappuccino</h4>
+                        <p>Blended coffee with cream.</p>
+                        <div class="price-row">
+                            <span>$6.25</span>
+                            <button class="add-to-cart-btn" data-name="Frappuccino" data-price="6.25">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SPECIALTY -->
+                <h3 class="menu-category">Specialty</h3>
+                <div class="menu-grid">
+
+                    <div class="menu-card">
+                        <img src="images/coffee-items/affogato.jpg" alt="Affogato">
+                        <h4>Affogato</h4>
+                        <p>Vanilla ice cream topped with espresso.</p>
+                        <div class="price-row">
+                            <span>$6.50</span>
+                            <button class="add-to-cart-btn" data-name="Affogato" data-price="6.50">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: CART -->
+            <aside class="cart-section">
+                <h2>Your Cart</h2>
+
+                <div id="cart-items">
+                    <p class="empty-cart">Your cart is empty.</p>
+                </div>
+
+                <div class="cart-total-box">
+                    <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+                    <button id="clear-cart-btn">Clear Cart</button>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="images/logos/white-logo.png" alt="Logo">
+        </div>
+
+        <div class="footer-phone-hours">
+            <span class="phone">555 555 5555</span>
+            <span class="hours">10 AM - MIDNIGHT</span>
+        </div>
+
+        <div class="links-wrapper">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="about.html">About</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="menu.html">Menu</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="social-media-icons-wrapper">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+
+        <div class="copyright-wrapper">
+            &copy; 2026 The Morning Grind &#124; All Rights Reserved
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>

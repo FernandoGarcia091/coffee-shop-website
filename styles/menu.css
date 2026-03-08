@@ -1,0 +1,161 @@
+.menu-page-section{
+  background-color: #120c08;
+  padding: 70px 50px;
+}
+
+.menu-page-wrapper{
+  width: 1200px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.menu-main-title{
+  font-size: 2.5em;
+  color: #f5efe6;
+  margin-bottom: 40px;
+}
+
+.menu-category{
+  font-size: 1.6em;
+  color: #d6b98c;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.menu-items-section h2,
+.cart-section h2{
+  color: #f5efe6;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.menu-card{
+  background-color: #241811;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  color: #f5efe6;
+  transition: 0.3s ease;
+}
+
+.menu-card:hover{
+  transform: translateY(-5px);
+  border-color: #d6b98c;
+}
+
+.menu-card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.menu-card h4{
+  margin: 15px 20px 5px;
+  font-size: 1.4em;
+}
+
+.menu-card p{
+  margin: 0 20px 15px;
+  color: #d6cec5;
+  line-height: 1.6;
+}
+
+.price-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+
+.price-row span{
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #d6b98c;
+}
+
+.add-to-cart-btn{
+  background-color: #d6b98c;
+  color: #2b1d16;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-to-cart-btn:hover{
+  background-color: #f5efe6;
+}
+
+.cart-section{
+  background-color: #241811;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 25px;
+  color: #f5efe6;
+  position: sticky;
+  top: 30px;
+}
+
+#cart-items{
+  margin-bottom: 20px;
+}
+
+.cart-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: #d6cec5;
+}
+
+.empty-cart{
+  color: #858585;
+}
+
+.cart-total-box{
+  margin-top: 20px;
+}
+
+#clear-cart-btn{
+  background-color: transparent;
+  border: 1px solid #d6b98c;
+  color: #d6b98c;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#clear-cart-btn:hover{
+  background-color: #d6b98c;
+  color: #2b1d16;
+}
+
+@media (max-width: 900px){
+  .menu-page-wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .menu-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .cart-section{
+    position: static;
+  }
+}

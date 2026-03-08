@@ -1,0 +1,28 @@
+/* page container styles */
+.page-container{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.page-container > .content-wrapper{
+  width: 1000px;
+  padding: 0 20px;
+}
+
+.page-container > .content-wrapper > #barista{
+  width: 350px;
+  margin: 23px 40px 20px 0px;
+  float: left;
+}
+
+.page-container > .content-wrapper p{
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+.page-container h2{
+  font-size: 2em;
+  margin-top: 20px;
+  color: #2b1d16;
+}
