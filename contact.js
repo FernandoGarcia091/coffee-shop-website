@@ -1,6 +1,4 @@
-// -----------------------------
-// HELPERS
-// -----------------------------
+// Helpers
 function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
 }
@@ -18,9 +16,7 @@ function setText(id, message) {
   document.getElementById(id).textContent = message;
 }
 
-// -----------------------------
-// CONTACT FORM
-// -----------------------------
+// Contact Form
 const contactForm = document.getElementById("contact-form");
 const contactSuccessMessage = document.getElementById("form-success-message");
 
@@ -72,9 +68,7 @@ contactForm.addEventListener("submit", function (e) {
   contactForm.reset();
 });
 
-// -----------------------------
-// CART
-// -----------------------------
+// Cart
 const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
 const cartItemsContainer = document.getElementById("cart-items");
 const cartTotalElement = document.getElementById("cart-total");
@@ -205,9 +199,7 @@ clearCartBtn.addEventListener("click", () => {
   renderCart();
 });
 
-// -----------------------------
-// CHECKOUT FORM
-// -----------------------------
+// Checkout Form
 const checkoutForm = document.getElementById("checkout-form");
 const checkoutSuccessMessage = document.getElementById("checkout-success-message");
 
@@ -260,6 +252,6 @@ checkoutForm.addEventListener("submit", function (e) {
   checkoutForm.reset();
 });
 
-// INIT
+// Init
 loadCart();
 renderCart();

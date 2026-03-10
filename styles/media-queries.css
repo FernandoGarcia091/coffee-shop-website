@@ -1,0 +1,126 @@
+/* Homepage */
+@media (max-width: 615px){
+    .navigation-wrapper{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .navigation-wrapper > .left-column{
+        order: 2;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .navigation-wrapper > .center-column{
+        order: 1;
+        width: 100%;
+    }
+
+    .navigation-wrapper > .right-column{
+        order: 3;
+        margin-top: 15px;
+    }
+
+    .links-wrapper{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .links-wrapper > .nav-link{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        width: 100%;
+    }
+}
+
+/* Homepage media queries */
+
+@media (max-width: 900px) {
+    .features-section .columns-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        min-height: 380px;
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        padding: 0 24px;
+    }
+
+    .hero-section .top-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section .bottom-heading h3 {
+        font-size: 1.15rem;
+    }
+
+    .map-heading h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section .top-heading h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 240px;
+        text-align: center;
+    }
+
+    .features-section,
+    .map-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* Checkout media */
+@media (max-width: 900px) {
+  .checkout-page-section {
+    padding: 60px 20px;
+  }
+
+  .checkout-page-wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .summary-box,
+  .checkout-form-section {
+    padding: 22px;
+  }
+}
+
+/* menu media */
+@media (max-width: 900px){
+  .menu-page-wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .menu-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .cart-section{
+    position: static;
+  }
+}
+
+/* contact media */
+@media (max-width: 900px){
+  .contact-page-wrapper{
+    grid-template-columns: 1fr;
+  }
+}

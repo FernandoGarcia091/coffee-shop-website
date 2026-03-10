@@ -3,7 +3,6 @@
     height: 190px;
     background-color: #2b1d16;
     color: #cbcbcb;
-    /* Flexbox container */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +21,7 @@
 .navigation-wrapper > .left-column > .icon i{
     font-size: 1.5em;
 }
-/* Trying to fix the location dot  */
+/* location dot  */
 .navigation-wrapper > .right-column{
     display: flex;
     align-items: center;
@@ -30,7 +29,6 @@
 
 .navigation-wrapper > .left-column > .contact-hours-wrapper{
     display: grid;
-    grid-template-columns: 8fr;
     grid-gap: 10px;
 }
 
@@ -92,6 +90,12 @@
     top: -35px;
 }
 
+.links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .links-wrapper > .nav-link{
     width: 70px;
     text-align: center;
@@ -108,4 +112,3 @@
     color: #f5efe6;
     letter-spacing: 2px;
 }
-

@@ -227,9 +227,3 @@
 .checkout-section{
   margin-top: 10px;
 }
-
-@media (max-width: 900px){
-  .contact-page-wrapper{
-    grid-template-columns: 1fr;
-  }
-}

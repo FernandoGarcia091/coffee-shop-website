@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>The Morning Grind | Homepage</title>
+    <meta name="description" content="The Morning Grind coffee shop in Pismo Beach. Fresh roasted coffee, free Wi-Fi, delicious drinks, and a welcoming workspace.">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/skewed-header.css">
     <link rel="stylesheet" href="styles/page-container.css">
-
-
+    <link rel="stylesheet" href="styles/media-queries.css">
 </head>
 
 <body>
-
-    <div class="navigation-wrapper">
+    <header class="navigation-wrapper">
 
         <!-- Left Column -->
         <div class="left-column">
-
             <div class="icon">
                 <i class="fa-solid fa-phone-volume fa-rotate-by" style="--fa-rotate-angle: 50deg;"></i>
             </div>
 
             <div class="contact-hours-wrapper">
                 <div class="phone">
-                    555 555 555
+                    555 555 5555
                 </div>
 
                 <div class="hours">
                     10 AM - MIDNIGHT
                 </div>
             </div>
-
         </div>
 
-
-        <!-- Logo -->
+        <!-- Center Column -->
         <div class="center-column">
             <div class="banner-image">
-                <img src="images/logos/white-logo.png" alt="Logo">
+                <img src="images/logos/white-logo.png" alt="The Morning Grind logo">
             </div>
 
-            <!-- Navigation Links -->
-            <div class="links-wrapper">
+            <nav class="links-wrapper" aria-label="Primary navigation">
                 <div class="nav-link">
-                    <a href="index.html">Home</a>
+                    <a href="index.html" aria-current="page">Home</a>
                 </div>
 
                 <div class="nav-link">
@@ -67,11 +59,10 @@
                 <div class="nav-link">
                     <a href="contact.html">Contact</a>
                 </div>
-            </div>
+            </nav>
         </div>
 
-
-        <!-- Address -->
+        <!-- Right Column -->
         <div class="right-column">
             <div class="address-wrapper">
                 <a href="contact.html">
@@ -81,74 +72,101 @@
             </div>
 
             <div class="contact-icon">
-                <a href="contact.html">
+                <a href="contact.html" aria-label="View location">
                     <i class="fa-solid fa-location-dot"></i>
                 </a>
             </div>
-
-
         </div>
+    </header>
 
-    </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
 
-    </div>
+            <div class="hero-content">
+                <div class="top-heading">
+                    <h1>The Morning Grind</h1>
+                </div>
 
-    <div class="hero-section">
-        <div class="top-heading">
-            <h1>The Morning Grind</h1>
-        </div>
+                <div class="bottom-heading">
+                    <h3>Small Batch. Bold Flavor.</h3>
+                </div>
 
-        <div class="bottom-heading">
-            <h3>Small Batch. Bold Flavor</h3>
-        </div>
-    </div>
-    </div>
-    <div class="features-section">
-        <div class="columns-wrapper">
-            <div class="column">
-                <i class="fa-solid fa-mortar-pestle"></i>
-                <p>Fresh Roasted Daily!</p>
-                <p>Our coffee is roasted in house daily!</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="hero-btn primary-btn">View Menu</a>
+                    <a href="contact.html" class="hero-btn secondary-btn">Visit Us</a>
+                </div>
             </div>
-            <div class="column">
-                <i class="fa-solid fa-tower-broadcast"></i>
-                <p>Free Wi-fi and Workspace Available!</p>
-                <p>Lorem ipsum dolor sit amet consectetur quas natus non quaerat dignissimos odio?</p>
+        </section>
+
+        <!-- Features -->
+        <section class="features-section">
+            <div class="section-divider"></div>
+
+            <div class="columns-wrapper">
+                <article class="column">
+                    <i class="fa-solid fa-mortar-pestle"></i>
+                    <h3>Fresh Roasted Daily</h3>
+                    <img src="images/backgrounds/barista-image.png" alt="Fresh roasted coffee being poured">
+                    <p>Our beans are roasted in-house every day for bold aroma, smooth texture, and rich flavor in every cup.</p>
+                </article>
+
+                <article class="column">
+                    <i class="fa-solid fa-tower-broadcast"></i>
+                    <h3>Free Wi-Fi & Workspace</h3>
+                    <img src="images/backgrounds/workspace.png" alt="Comfortable coffee shop workspace">
+                    <p>Settle in, stay connected, and enjoy a relaxed atmosphere perfect for studying, meetings, or remote work.</p>
+                </article>
+
+                <article class="column">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h3>Delicious Drink Options</h3>
+                    <img src="images/backgrounds/drinks.png" alt="Coffee and drink options on menu board">
+                    <p>From bold espresso and smooth lattes to iced favorites, our menu has something for every coffee lover.</p>
+                </article>
             </div>
+        </section>
 
-            <div class="column">
-                <i class="fa-solid fa-mug-hot"></i>
-                <p>Many Delicious Options!</p>
-                <p>Lorem ipsum dolor sit amet consectetur quas natus non quaerat dignissimos odio?</p>
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="section-divider"></div>
+
+            <div class="map-content">
+                <div class="map-heading">
+                    <h2>Find Us in Pismo Beach</h2>
+                    <p>Stop by for handcrafted coffee, fresh pastries, and a cozy atmosphere right near the coast.</p>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7969.728264060726!2d-120.6449785235582!3d35.140142072766686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ec58dd84fd89e1%3A0xdc2db79b48683266!2sSplash%20Caf%C3%A9!5e1!3m2!1sen!2sus!4v1772858847832!5m2!1sen!2sus"
+                        width="100%"
+                        height="360"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Map location for The Morning Grind">
+                    </iframe>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7969.728264060726!2d-120.6449785235582!3d35.140142072766686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ec58dd84fd89e1%3A0xdc2db79b48683266!2sSplash%20Caf%C3%A9!5e1!3m2!1sen!2sus!4v1772858847832!5m2!1sen!2sus"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
-    </div>
-
-    <div class="footer">
+    <footer class="footer">
         <div class="logo-footer">
-            <img src="images/logos/white-logo.png" alt="Logo">
+            <img src="images/logos/white-logo.png" alt="The Morning Grind logo">
         </div>
 
         <div class="footer-phone-hours">
-            <span class="phone">
-                555 555 5555
-            </span>
-            
-            <span class="hours">
-                10 AM - MIDNIGHT
-            </span>
+            <span class="phone">555 555 5555</span>
+            <span class="hours">10 AM - MIDNIGHT</span>
         </div>
-        
+
         <div class="links-wrapper">
             <div class="nav-link">
-                <a href="index.html">Home</a>
+                <a href="index.html" aria-current="page">Home</a>
             </div>
 
             <div class="nav-link">
@@ -165,23 +183,22 @@
         </div>
 
         <div class="social-media-icons-wrapper">
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com" target="_blank">
+
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
+
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
             </a>
         </div>
 
         <div class="copyright-wrapper">
             &copy; 2026 The Morning Grind &#124; All Rights Reserved
-
         </div>
-    </div>
-
+    </footer>
 </body>
-
 </html>

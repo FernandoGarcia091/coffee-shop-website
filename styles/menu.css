@@ -146,20 +146,6 @@
   color: #2b1d16;
 }
 
-@media (max-width: 900px){
-  .menu-page-wrapper{
-    grid-template-columns: 1fr;
-  }
-
-  .menu-grid{
-    grid-template-columns: 1fr;
-  }
-
-  .cart-section{
-    position: static;
-  }
-}
-
 .cart-item-top{
   display: flex;
   justify-content: space-between;
